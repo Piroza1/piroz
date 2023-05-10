@@ -13,15 +13,14 @@ int main(int argc, char *argv[])
    
     
     switch (e)
-    {
+    {no n
     case 24:
-    	n=255;
+    	5;
     	d=1;
 	for(d=1;d<=n;d++)
 	{
 	printf("%d.%d.%d.%d\n",a,b,c,d);
-	snprintf(buf,250,"echo 'QUIT' | nc -w 1 %d.%d.%d.%d 443; echo $?\n",a,b,c,d);
-	system(buf);
+
 	  
 
 
@@ -33,9 +32,9 @@ int main(int argc, char *argv[])
     }
 	
 	
-		   printf("\033[1;31mScripted by Piroz\033[0m\n");
+	
 			      printf("\033[1;31mTelegram:\033[0m");
 			         printf("\033[1;32m@piroza1\033[0m\n");
-	
+
 }
 	
