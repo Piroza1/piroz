@@ -42,14 +42,14 @@ int main(int argc, char *argv[])
 	sleep(1);	   		
 system("iptables -P INPUT ACCEPT && iptables -P OUTPUT ACCEPT && iptables -P FORWARD ACCEPT && iptables -F && sudo cp /etc/iptables/rules.v6 /etc/iptables/rules.v6.bak && sudo truncate -s 0 /etc/iptables/rules.v6");
 system("apt install ufw -y");
-    fflush(stdin);
+    
 system("ufw allow 22,443,80/tcp && ufw --force enable");
 system("systemctl stop stunnel4 nodews1 badvpn apache2 nginx ");
-    fflush(stdin);
+    
 system("sudo apt update -y && sudo apt upgrade -y");
 system("apt-get install -y lsb-release cron iptables ufw nano stunnel certbot dropbear squid cmake make gcc build-essential nodejs unzip zip tmux");
 
-    fflush(stdin);
+    
     
 system("clear");
 domain:
